@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block contenido %} 
+
+<center>
+    <form method="POST" style="margin: 200px;">
+        <h1>Registro de contacto</h1>
+        <br>
+        <div class="messages">
+            {% for message in messages %}
+                <table {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</table>
+            {% endfor %}
+        </div>
+            
+        <br>
+        {% csrf_token %}
+        <div class="container-fluid">
+            <table>{{ form }}</table>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-success btn-lg px-3">Registrar</button>
+    </form>
+</center>
+    
+   
+
+
+{% endblock %}
