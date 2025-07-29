@@ -1,0 +1,6 @@
+botella de plastico;reciclable;punto verde
+restos de comida;orgánico;compostera
+pilas;peligroso;punto limpio
+papel;reciclable;punto verde
+vidrio;reciclable;punto verde
+pañales;peligroso;basura común
